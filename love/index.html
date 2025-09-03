@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,24 +12,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="drag-container">
         <div id="spin-container">
-            <img src="./images/r1.mp4" alt="">
-            <img src="./images/r2.mp4" alt="">
-            <img src="./images/r3.mp4" alt="">
+            <video src="./images/r1.mp4" autoplay loop muted></video>
+            <video src="./images/r2.mp4" autoplay loop muted></video>
+            <video src="./images/r3.mp4" autoplay loop muted></video>
             <img src="./images/r4.jpg" alt="">
             <img src="./images/r5.jpg" alt="">
             <img src="./images/r6.jpg" alt="">
-            <img src="./images/r7.mp4" alt="">
+            <video src="./images/r7.mp4" autoplay loop muted></video>
             <img src="./images/r8.jpg" alt="">
             <img src="./images/r9.jpg" alt="">
-            <video src="./images/r10.jpg" autoplay loop muted></video>
+            <img src="./images/r10.jpg" alt="">
             <p>Happy Birthday Vaishnavi</p>
+            <!-- <video src="./images/r10.jpg" autoplay loop muted></video> -->
         </div>
         <div id="ground"></div>
     </div>
-    
+
     <div id="music-container"></div>
     <!-- <div id="canva">
         <canvas id="canvas"></canvas>
@@ -43,10 +46,10 @@
     <script src="main.js"></script>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             var audio = document.getElementById("myAudio");
             audio.muted = false;
-            audio.play().catch(function(e) {
+            audio.play().catch(function (e) {
                 console.log('Audio playback failed:', e);
             });
 
@@ -142,4 +145,5 @@
         };
     </script>
 </body>
+
 </html>
